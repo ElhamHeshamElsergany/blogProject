@@ -1,0 +1,37 @@
+
+<div class="w-50 mx-auto my-5 py-5">
+    <h2 class="my-4 text-center ">Add your Article</h2>
+
+    <form [formGroup]='articleForm' (ngSubmit)='submitArticleForm(articleForm)' >
+        
+        <div class="my-5">
+            <label for="title" class="h5"> Article title :</label>
+            <input formControlName='title' type="text"  class="form-control text-white  bg-transparent  border-top-0 border-end-0 border-start-0">
+        </div>
+
+
+        <div class="my-5">
+            <label for="body" class="h5"> Article :</label>
+            <textarea class="form-control bg-transparent text-white  border-top-0 border-end-0 border-start-0" formControlName="body"  name="body" rows="4" cols="50">
+                </textarea>
+
+        </div>
+
+        <!-- <div class="my-5">
+            <label for="author" class="h5"> Author :</label>
+            <input formControlName='author' type="text" class="form-control text-white  bg-transparent  border-top-0 border-end-0 border-start-0">
+        </div> -->
+        <div class="my-5">
+            <label for="tags" class="h5"> Tags :</label>
+            <input formControlName='tags' type="text" class="form-control text-white  bg-transparent  border-top-0 border-end-0 border-start-0">
+        </div>
+        <div class="my-5">
+            <label class="h5"> Image (add Img URL) :</label><br/>
+            <input class="form-control bg-transparent  border-top-0 text-white  border-end-0 border-start-0" placeholder="http//:URL" formControlName='img'  type="text" ng-model="newClientsItem.image"/>
+        </div>
+
+        <button  class="btn btn-danger mt-2 p-3">Submit</button>
+        
+    </form>
+
+</div>

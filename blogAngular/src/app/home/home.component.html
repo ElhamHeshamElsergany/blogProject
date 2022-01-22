@@ -1,0 +1,37 @@
+<app-header></app-header>
+<div class="container">
+    <div class="row my-5">
+        <div class="col-md-4 ">
+            <div class="brdr my-5 ">
+                <h2 class="seecond-color">Reading Can Make Changes</h2>
+                <p class="seecond-color">“A reader lives a thousand lives before he dies . . . The man who never reads
+                    lives
+                    only one.”</p>
+                <div class="brdr my-5 w-50 "></div>
+            </div>
+        </div>
+        <div class="col-md-4" *ngFor='let blog of allBlogs'>
+            <div class="blogs rounded-3 shadow-lg ms-3 my-2">
+                <div class="w-100">
+                    <img src={{blog.img}} class="w-100 rounded" alt="">
+                </div>
+                <div class="w-100 my-2 text-center">
+                    <h2 class="w-100 h5">{{blog.title}}</h2>
+                    <p>{{blog.body | slice:0:200}}</p>
+                    <a [routerLink]="['/articleDetails' , blog._id ]" class="btn btn-primary rounded-pill my-2 ">Read more <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <br>
+                    <span>Author:{{userData.username}}</span>
+                    <br>
+                    <span>Created at : {{blog.createdAt |date}}</span>
+                    <br>
+                    <div class="d-flex justify-content-evenly my-3">
+                       <h5 class="icon1"><i class="fas fa-thumbs-up" title="like"></i></h5>
+                       <h5 class="icon2"><i class="fas fa-share-alt" title="share"></i></h5>
+                       <h5 class="icon3"><i class="fas fa-bookmark" title="save"></i></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

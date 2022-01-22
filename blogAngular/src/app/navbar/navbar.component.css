@@ -1,0 +1,26 @@
+.bg{
+    background-color: #010a294d;
+}
+a{
+    font-weight: bold;
+}
+ul li a {
+padding: 6px 15px ;
+border-radius: 20px;
+}
+ul li a:hover{
+    background-color: #fff;
+    font-size: 20px;
+    transition: all .5s;
+}
+.profile{
+    width: 15%;
+    cursor: pointer;
+}
+.activename{
+    padding: 6px 15px ;
+    border-radius: 20px; 
+    background-color: #fff;
+    height: 5vh;
+    font: size 25px;
+}

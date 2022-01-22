@@ -1,0 +1,31 @@
+.second-color{
+color: #949cb0 !important;
+}
+img{
+    height: 25vh;
+}
+.brdr{
+    background-color: #a8a8a83d;
+    height: 2px;
+}
+.blogs{
+    background-color: rgba(9, 22, 26, 0.239) !important;
+    border: #7389c042 2px solid;
+    height: 70vh;
+}
+.blogs:hover{
+    border: #7389c0fb 2px solid;
+}
+.icon1:hover{
+    color: rgb(66, 66, 221);
+    cursor: pointer;
+}
+.icon2:hover{
+    color: cornflowerblue;
+    cursor: pointer;
+}
+.icon3:hover{
+    color: crimson;
+    cursor: pointer;
+
+}
