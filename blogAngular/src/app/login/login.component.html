@@ -1,5 +1,5 @@
 <div class="w-50 mx-auto py-5">
-    <h2 class="my-5">login</h2>
+    <h2 class="my-5">Login</h2>
     <form [formGroup]='loginForm' (ngSubmit)='submitloginForm(loginForm)'>
         <div class="my-3 mt-3">
             <label for="username" class="h5"> UserName:</label>
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div *ngIf="loginForm.get('password')?.errors !=null 
-            && loginForm.get('password')?.touched" class="alert alert-danger mt-2">
+            && loginForm.get('password')?.touched" class="alert alert-danger w-75 mt-2">
                 <p *ngIf="loginForm.get('password')?.errors?.required">password is required </p>
             </div>
         </div>

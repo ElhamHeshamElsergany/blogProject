@@ -17,18 +17,19 @@
                 </div>
                 <div class="w-100 my-2 text-center">
                     <h2 class="w-100 h5">{{blog.title}}</h2>
-                    <p>{{blog.body | slice:0:200}}</p>
-                    <a [routerLink]="['/articleDetails' , blog._id ]" class="btn btn-primary rounded-pill my-2 ">Read more <i class="fas fa-arrow-right"></i>
+                    <p class="my-3">{{blog.body | slice:0:200}}</p>
+                    <a [routerLink]="['/articleDetails' , blog._id ]"
+                     class="btn btn-primary rounded-pill my-1 ">
+                     Read more 
+                        <i class="fas fa-arrow-right"></i>
                     </a>
-                    <!-- <br>
-                    <span>Author:{{userData.username}}</span>
-                    <br> -->
+               <br> 
                     <span>Created at : {{blog.createdAt |date}}</span>
                     <br>
-                    <div class="d-flex justify-content-evenly my-3">
-                       <h5 class="icon1"><i class="fas fa-thumbs-up" title="like"></i></h5>
-                       <h5 class="icon2"><i class="fas fa-share-alt" title="share"></i></h5>
-                       <h5 class="icon3"><i class="fas fa-bookmark" title="save"></i></h5>
+                    <div class="d-flex justify-content-evenly my-1">
+                        <h5 class="icon1"><i class="fas fa-thumbs-up" title="like"></i></h5>
+                        <h5 class="icon2"><i class="fas fa-share-alt" title="share"></i></h5>
+                        <h5 class="icon3"><i class="fas fa-bookmark" title="save"></i></h5>
                     </div>
                 </div>
             </div>
