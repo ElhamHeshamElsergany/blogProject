@@ -1,9 +1,9 @@
 <div class="w-50 mx-auto py-5">
-    <h2 class="my-4 text-center">login</h2>
+    <h2 class="my-5">login</h2>
     <form [formGroup]='loginForm' (ngSubmit)='submitloginForm(loginForm)'>
-        <div class="my-3">
+        <div class="my-3 mt-3">
             <label for="username" class="h5"> UserName:</label>
-            <input formControlName='username' type="text" class="form-control">
+            <input formControlName='username' type="text" class="form-control w-75">
             <div *ngIf="loginForm.get('username')?.errors !=null 
             && loginForm.get('username')?.touched" class="alert alert-danger mt-2">
                 <p *ngIf="loginForm.get('username')?.errors?.required">username is required </p>
@@ -15,10 +15,10 @@
 
         <div class="my-3">
             <label for="password" class="h5"> password:</label>
-            <div>
-                <input formControlName='password' [type]="fieldTextType?'text':'password'" class="pass position-relative form-control">
-                <div class="input-group-append">
-                    <span class="input-group-text">
+            <div class="d-flex">
+                <input formControlName='password' [type]="fieldTextType?'text':'password'" class="pass position-relative form-control w-75">
+                <div class="input-group-append w-25  position-relative">
+                    <span class="input-group-text w-25">
                         <i class="fa" [ngClass]="{'fa-eye-slash': !fieldTextType,'fa-eye': fieldTextType}" (click)="toggleFieldTextType()"></i>
                     </span>
                 </div>

@@ -20,9 +20,9 @@
                     <p>{{blog.body | slice:0:200}}</p>
                     <a [routerLink]="['/articleDetails' , blog._id ]" class="btn btn-primary rounded-pill my-2 ">Read more <i class="fas fa-arrow-right"></i>
                     </a>
-                    <br>
+                    <!-- <br>
                     <span>Author:{{userData.username}}</span>
-                    <br>
+                    <br> -->
                     <span>Created at : {{blog.createdAt |date}}</span>
                     <br>
                     <div class="d-flex justify-content-evenly my-3">

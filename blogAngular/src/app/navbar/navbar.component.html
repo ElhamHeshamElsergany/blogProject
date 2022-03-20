@@ -4,9 +4,9 @@
         <h2 class=" text-info">Blogy</h2>
     </div>
     <ul class="list-unstyled d-flex w-25">
-        <li *ngIf="isLogin" class="px-2 h5"><a routerLink='home'>Home </a></li>
-        <li *ngIf="isLogin" class="px-2 h5"><a routerLink='creatBlog'>Add Article </a></li>
-        <li *ngIf="isLogin" class="px-2 h5"><a routerLink='contact'>Contact US</a></li>
+        <li *ngIf="isLogin" class="px-1 h5"><a routerLink='home'>Home </a></li>
+        <li *ngIf="isLogin" class="px-1 h5"><a routerLink='creatBlog'>Add Article </a></li>
+        <li *ngIf="isLogin" class="px-1 h5"><a routerLink='contact'>Contact US</a></li>
     </ul>
     <ul class="list-unstyled d-flex w-25">
         <li class="px-2 h5"><i class="fab fa-facebook-f"></i></li>
@@ -19,11 +19,6 @@
         <h5 *ngIf="isLogin" class="text-primary activename mx-2">{{userData.username}}</h5>
         <div *ngIf="isLogin" class="profile">
             <img src="../../assets/images/profile-no-img.png" class="w-75 rounded-circle" alt="">
-            <!-- <div class="img-options d-flex bg-danger p-3">
-                <div><img src="../../assets/images/male-avatar-profile-icon-of-smiling-caucasian-man-vector.jpg" class="w-100 rounded-circle my-2" alt=""></div>
-                <div><img src="../../assets/images/male-avatar-profile-icon-of-smiling-caucasian-man-vector.jpg" class="w-100 rounded-circle my-2" alt=""></div>
-                <div><img src="../../assets/images/male-avatar-profile-icon-of-smiling-caucasian-man-vector.jpg" class="w-100 rounded-circle my-2" alt=""></div>
-            </div> -->
         </div>
     </div>
 
